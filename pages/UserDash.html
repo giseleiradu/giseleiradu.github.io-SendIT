@@ -1,0 +1,158 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/dash.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/main.css" />
+    <script src="../js/dash.js"></script>
+</head>
+
+<body>
+    <div class="backdrop"></div>
+    <header id="dash" class="shado">
+
+        <div class="logout">
+            <h3 class="clickable">Logout</h3>
+
+        </div>
+
+
+
+        <h1>SendIT</h1>
+    </header>
+
+    <div id="main">
+        <div class="txt shado">
+            <h2>WELCOME TO THE SENDIT APPLICATION</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer semper dapibus tellus et
+                aliquet. Mauris viverra ultrices enim, vel lobortis odio elementum vel. Sed nec ipsum felis.</p>
+        </div>
+
+        <div id="disp">
+            <div class="cad one">
+                <div class="clickable clik  bak" onclick="edit()">
+                    <h2>New Parcel Order</h2>
+                    <div class="big ">&#x2629 </div>
+                </div>
+
+                <div class="modal mod">
+                    <div class="dv modal-content">
+                        <span class="close">&times;</span>
+                        <form>
+                            <input type="text" placeholder="Order Title" required />
+                            <select>
+                                <option value="">Chose Type</option>
+                                <option value="Type1">Type1</option>
+                                <option value="Type2">Type2</option>
+                                <option value="Type3">Type3</option>
+                                <option value="Type4">Type4</option>
+                            </select>
+                            <input type="text" placeholder="Destination Address" required />
+                            <textarea placeholder="Description" rows="5" cols="30"></textarea>
+
+
+                            <button type="submit"> Order</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="cad one ">
+                <div class="clickable clik bak" onclick="edit()">
+                    <h2>View Orders</h2>
+                    <div class="big">&#9732</div>
+                </div>
+                <div class="modal mod">
+                    <div class="dv modal-content">
+                        <table>
+                            <tr>
+                                <th>Tracking Number</th>
+                                <th>Oder Destination</th>
+                                <th>Order Description</th>
+                                <th>Parcel Type</th>
+                                <th>Initiated Date</th>
+                                <th>Parcel Status</th>
+                                <th>Action</th>
+                            </tr>
+                            <tr>
+                                <td>dhbjadnc</td>
+                                <td>Bujumbura</td>
+                                <td>Descrition</td>
+                                <td>type</td>
+                                <td>Date</td>
+                                <td>
+                                    <div id="myProgress">
+                                        <div id="myBar"></div>
+
+
+                                    </div>
+                                    <button onclick="move()">&bigotimes;</button>
+                                </td>
+                                <!-- <td><button onclick="edit()">Edit</button><br /><button onclick="dilit()">Delete</button></td> -->
+                            </tr>
+
+                            <tr>
+                                <td>Tracking</td>
+                                <td>Destination</td>
+                                <td>Descrition</td>
+                                <td>type</td>
+                                <td>Date</td>
+                                <td>
+                                    <div id="myProgress">
+                                        <div id="myBar"></div>
+                                    </div>
+                                    <button onclick="move()">&bigotimes;</button>
+                                </td>
+                                <!-- <td><button onclick="edit()">Edit</button><br /><button onclick="dilit()">Delete</button></td> -->
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="cad one">
+                <div class="clickable clik bak" onclick="edit()">
+                    <h2>View Profile</h2>
+                    <div class="big">&#9732 </div>
+                </div>
+                <div class="modal mod ">
+                    <div class="dv modal-content">
+                        <span class="close">&times;</span>
+                        <form>
+                            <input type="text" placeholder="Order Title" required />
+                            <input type="text" placeholder="Destination Address" required />
+                            <textarea placeholder="description" rows="5" cols="35"></textarea>
+
+
+                            <button type="submit"> Order</button>
+                        </form>
+                    </div>
+                </div>
+                
+            </div>
+        
+        </div>
+        <p>&#x260F; 0788888888 for Safely and Timely Delivering</p>
+    </div>
+
+
+
+
+    <div id="futa">
+
+        <div class="cad two">
+           
+
+            <p>&#169 SendIt Rwanda2018</p>
+        </div>
+
+    </div>
+    </div>
+
+</body>
+
+</html>

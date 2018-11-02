@@ -1,0 +1,55 @@
+
+#dash, #sign{
+    
+    background-color: black;
+    color: turquoise;
+    
+}
+#futa{
+    color: turquoise;
+}
+
+#sign{
+    width: 35%;
+    margin: 0% 75% 0% 35%;
+    text-align: center;
+    /* background-color: black; */
+}
+
+#fom{
+    margin: 0% 75% 0% 35%;
+    /* background-color: cadetblue; */
+    width: 35%;
+    height: 85%;
+    padding: 2% 0% 0% 0%; 
+    background-image: linear-gradient(to bottom,turquoise, whitesmoke);
+    
+    
+}
+
+h2 {
+    color: rgb(40, 78, 74);
+    text-align: center;
+}
+
+#fom a{
+   margin: 20% 10% 0% 20%;
+  
+}
+
+input{
+    width: 90%;
+    font-size: 20;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 10px;
+    /* background-color: rgb(76, 186, 230); */
+    break-after: auto;
+}
+
+.fom button{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0% 10% 0% 40%;
+    background-color: turquoise;
+    border: 1px black solid;
+}

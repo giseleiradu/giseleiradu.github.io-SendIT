@@ -1,18 +1,9 @@
-function openNav() {
-    document.querySelector('#mySidenav').style.width = "250px";
-
-}
-function closeNav() {
-    document.querySelector('#mySidenav').style.width = "0";
-}
-
-
-function move() {
+function move(evt, num) {
     var elem = document.querySelector("#myBar");
     var width = 1;
     var id = setInterval(frame, 10);
     function frame() {
-        if (width >= 100) {
+        if (width >= num) {
             clearInterval(id);
         } else {
             width++;
@@ -24,31 +15,56 @@ function move() {
 }
 
 function edit(){
-    var modal = document.querySelector(".mod");
-    var klik = document.querySelector(".clik");
-    var back = document.querySelector(".backdrop");
+    var modal = document.querySelector("#order");
+    var klik = document.querySelector("#new");
+    // var back = document.querySelector(".backdrop");
     var span = document.getElementsByClassName("close")[0];
     klik.onclick = function(){
         modal.style.display = "block";
-        back.style.display = "block";
-        back.style.opacity= "0.5";
+        // back.style.display = "block";
+        // back.style.opacity= "0.5";
         // back.style.opacity="0.5"
     }
     span.onclick= function(){
         modal.style.display="none";
-        back.style.display="none";
+        // back.style.display="none";
     }
-    back.onclick= function(){
+    // back.onclick= function(){
+    //     modal.style.display="none";
+    //     back.style.display="none";
+    // }
+   
+}
+var modal, klik, span;
+function orders(){
+    modal = document.querySelector("#list");
+    klik = document.querySelector( "#orders");
+    span = document.getElementsByClassName("clos")[0];
+    klik.onclick = function(){
+        modal.style.display = "block";
+    }
+    span.onclick= function(){
         modal.style.display="none";
-        back.style.display="none";
     }
    
 }
-// Window.onclick = function(event){
-//     if(event.target== modal){
-//         modal.style.display="none";
-//     }
-// }
+function profile(){
+     modal = document.querySelector("#profile");
+    klik = document.querySelector("#klik");
+    span = document.getElementsByClassName("cloz")[0];
+    klik.onclick = function(){
+        modal.style.display = "block";
+    }
+    span.onclick= function(){
+        modal.style.display="none";
+    }
+   
+}
+Window.onclick = function(event){
+    if(event.target== modal){
+        modal.style.display="none";
+    }
+}
 
 function myFunction(){
     var input, filter, ul, li, a, i;
@@ -70,7 +86,7 @@ function myFunction(){
 }
 
 //Admin Dashboard
-function view(evt, cityName){
+function view(evt, idName){
     var i, tabcontent, tablinks;
     tabcontent= document.getElementsByClassName("tabcontent");
     for(i=0; i<tabcontent.length; i++){
@@ -81,7 +97,8 @@ function view(evt, cityName){
         tablinks[i].className=tablinks[i].className.replace("active", "");
         
     }
-    document.getElementById(cityName).style.display = "block";
+    document.getElementById(idName).style.display = "block";
         evt.currentTarget.className += " active"; 
 } 
-document.getElementById('defaultOpen').click();
+
+// document.getElementById('defaultOpen').style.display="block";

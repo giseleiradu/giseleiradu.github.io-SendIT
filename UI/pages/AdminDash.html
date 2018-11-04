@@ -12,50 +12,104 @@
 </head>
 
 <body>
-    <header id="dash" class="shado" >
-        <h1>SendIT</h1>
-        <ul></ul>
+    <header id="dash" class="shado">
+        <img src="../images/logo.PNG"/> 
     </header>
     <h2>Welcome to the Admin Dashboard</h2>
-    <div id="tbs" >
+    <div id="tbs">
         <div class="tab bak">
 
             <button id="defaultOpen" class="tablinks" onclick="view(event, 'edit')">
-               Edit Parcel Status
+                Edit
             </button>
             <button class="tablinks" onclick="view(event, 'list')">
-                Users List
+                Users
             </button>
             <button class="tablinks" onclick="view(event, 'others')">
                 Others
             </button>
         </div>
+
+        <div id="edit" class="tabcontent shado">
+            <span onclick="this.parentElement.style.display='none'" class="topright">&times;</span>
+            <div class="">
+                <form id="fom" class="shado">
+                    <label for="trackNumber">Track Number</label>
+                    <input type="text" id="trackNumber" name="trackNumber" value="TH-128" desabled>
+                    <br>
+                    <label>Item Type</label>
+                    <br>
+                    <input type="text" id="itemType" value="Electronics" disabled>
+                    <br>
+                    <label>Current Location</label>
+                    <br>
+                    <select class="cb">
+                        <option value="kigali">kigali</option>
+                        <option value="nairobi">nairobi</option>
+                        <option value="kinshasa">kinshasa</option>
+                        <option value="bujumbura">bujumbura</option>
+                    </select>
+                    <br>
+                    <label>Destination</label>
+                    <br>
+                    <input type="text" placeholder="kenya" disabled/>
+                    <br>
+                    <label>Parcel Status</label>
+                    <br>
+                    <select class="cb">
+                        <option value="Innitiated">Innitiated</option>
+                        <option value="Submitted">Submitted</option>
+                        <option value="On Route">On Route</option>
+                        <option value="Delivered">Delivered</option>
+                        <option value="Damaged">Damaged</option>
+                        <option value="Canceled">Canceled</option>
+                    </select>
+                    <br>
+                    <label>Arrival Date</label>
+                    <br>
+                    <input type="date" id="adate" name="adate" value="">
+                    <br>
+                    <!-- <label>Comment</label>
+                    <br>
+                    <textarea class="len"></textarea>
+                    <br> -->
+                    <button class="btnconfirm">Comfirm</button>
+                    <br>
+                </form>
+            </div>
+        </div>
+
+        <div id="list" class="tabcontent">
+            <span onclick="this.parentElement.style.display='none'" class="topright">&times;</span>
+            <h2>User List</h2>
+            <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search by Tracking Number..." title="Type Tracking Number" />
+
+            <ul id="myUL">
+                <li><a href="#">Adele<button class="btnedit tablinks" onclick="view(event, 'edit')">Edit</button></a>
+                    <a href="#">Manuma<button class="btnedit tablinks" onclick="view(event, 'edit')">Edit</button></a>
+                </li>
+                <li><a href="#">Gisele<button class="btnedit tablinks" onclick="view(event, 'edit')">Edit</button></a></li>
+                <li><a href="#">John<button class="btnedit tablinks" onclick="view(event, 'edit')">Edit</button></a></li>
+                <li><a href="#">Rukwaya<button class="btnedit tablinks" onclick="view(event, 'edit')">Edit</button></a></li>
+                <li><a href="#">Mabano<button class="btnedit tablinks" onclick="view(event, 'edit')">Edit</button></a></li>
+        </div>
+
+
         <div id="others" class="tabcontent">
             <span onclick="this.parentElement.style.display='none'" class="topright">&times;</span>
             <h3>Other on SendIt</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer semper dapibus tellus et
                 aliquet.</p>
         </div>
-        <div id="edit" class="tabcontent">
-                <span onclick="this.parentElement.style.display='none'" class="topright">&times;</span>
-            <h3>Paris</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer semper dapibus tellus et
-                aliquet.</p>
-        </div>
-        <div id="list" class="tabcontent">
-                <span onclick="this.parentElement.style.display='none'" class="topright">&times;</span>
-            <h2>User List</h2>
-            <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search by Tracking Code..." title="Type the Code"/>
+    </div>
+    <div id="futa">
+
+        <div class="cad two">
            
-            <ul id="myUL">
-                <li><a href="#">Adele</a>
-                    <a href="#">Manuma</a>
-                </li>
-                <li><a href="#">Gisele</a></li>
-                <li><a href="#">John</a></li>
-                <li><a href="#">Rukwaya</a></li>
-                <li><a href="#">Mabano</a></li>
+
+            <p>&#169 SendIt Rwanda2018</p>
         </div>
+
     </div>
     </div>
 

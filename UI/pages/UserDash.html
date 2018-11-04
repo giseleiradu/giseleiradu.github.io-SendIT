@@ -12,63 +12,81 @@
 </head>
 
 <body>
-    <div class="backdrop"></div>
+    <div></div>
     <header id="dash" class="shado">
 
         <div class="logout">
-            <h3 class="clickable">Logout</h3>
-
+                <h3>Gisele |<a href="../pages/index.html">Logout </a></h3>
+    
         </div>
-
-
-
-        <h1>SendIT</h1>
+        <img id="avatar" src="../images/userAvatar.png"/>
+        <img src="../images/logo.PNG"/> 
     </header>
 
     <div id="main">
         <div class="txt shado">
             <h2>WELCOME TO THE SENDIT APPLICATION</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer semper dapibus tellus et
-                aliquet. Mauris viverra ultrices enim, vel lobortis odio elementum vel. Sed nec ipsum felis.</p>
+            <p>SendIT is a courier service that helps users deliver parcels to different destinations. SendIT
+                provides courier quotes based on weight categories.</p>
         </div>
 
         <div id="disp">
             <div class="cad one">
-                <div class="clickable clik  bak" onclick="edit()">
+                <div id="new" class="clickable clik  bak" onclick="edit()">
                     <h2>New Parcel Order</h2>
                     <div class="big ">&#x2629 </div>
                 </div>
 
-                <div class="modal mod">
-                    <div class="dv modal-content">
-                        <span class="close">&times;</span>
-                        <form>
-                            <input type="text" placeholder="Order Title" required />
-                            <select>
-                                <option value="">Chose Type</option>
-                                <option value="Type1">Type1</option>
-                                <option value="Type2">Type2</option>
-                                <option value="Type3">Type3</option>
-                                <option value="Type4">Type4</option>
+                <div id="order" class="modal mod">
+                    <div class="modal-content">
+
+                        <form id="fomU" class="shado">
+                            <span class="close">&times;</span>
+                            <label for="trackNumber">Track Number</label>
+                            <input type="text" id="trackNumber" name="trackNumber" value="TH-128" desabled>
+                            <br>
+                            <label>Item Type</label>
+                            <br>
+                            <select class="cb">
+                                <option value=" ">Electronics</option>
+                                <option value=" ">Food</option>
+                                <option value=" ">Clothes</option>
+                                <option value=" ">Documents</option>
                             </select>
-                            <input type="text" placeholder="Destination Address" required />
-                            <textarea placeholder="Description" rows="5" cols="30"></textarea>
-
-
-                            <button type="submit"> Order</button>
+                            <br>
+                            <label>Destination</label>
+                            <br>
+                            <select class="cb">
+                                <option value="kigali">kigali</option>
+                                <option value="nairobi">nairobi</option>
+                                <option value="kinshasa">kinshasa</option>
+                                <option value="bujumbura">bujumbura</option>
+                            </select>
+                            <br>
+                            <label>Initation Date</label>
+                            <br>
+                            <input type="date" id="adate" name="adate" value="initiationdate">
+                            <br>
+                            <label>Comment</label>
+                            <br>
+                            <textarea class="len"></textarea>
+                            <br>
+                            <button class="btnconfirm">Comfirm</button>
+                            <br>
                         </form>
                     </div>
                 </div>
             </div>
 
-
             <div class="cad one ">
-                <div class="clickable clik bak" onclick="edit()">
+                <div id="orders" class="clickable clik bak" onclick="orders()">
                     <h2>View Orders</h2>
                     <div class="big">&#9732</div>
                 </div>
-                <div class="modal mod">
+                <div id="list" class="modal mod">
                     <div class="dv modal-content">
+                        <span class="clos">&times;</span>
+                        <input type="text" placeholder="Search by Track Number" />
                         <table>
                             <tr>
                                 <th>Tracking Number</th>
@@ -85,15 +103,10 @@
                                 <td>Descrition</td>
                                 <td>type</td>
                                 <td>Date</td>
-                                <td>
-                                    <div id="myProgress">
-                                        <div id="myBar"></div>
-
-
-                                    </div>
-                                    <button onclick="move()">&bigotimes;</button>
+                                <td>Submitted</td>
+                                <td><button>Cancel</button>
+                                    <button class="shado" onclick="view(event, 'edit')">Edit</button>
                                 </td>
-                                <!-- <td><button onclick="edit()">Edit</button><br /><button onclick="dilit()">Delete</button></td> -->
                             </tr>
 
                             <tr>
@@ -102,39 +115,57 @@
                                 <td>Descrition</td>
                                 <td>type</td>
                                 <td>Date</td>
-                                <td>
-                                    <div id="myProgress">
-                                        <div id="myBar"></div>
-                                    </div>
-                                    <button onclick="move()">&bigotimes;</button>
+                                <td>Ordered</td>
+                                <td><button>Cancel</button>
+                                    <button class="shado" onclick="view(event, 'edit')">Edit</button>
                                 </td>
-                                <!-- <td><button onclick="edit()">Edit</button><br /><button onclick="dilit()">Delete</button></td> -->
+                            </tr>
+                            <tr>
+                                <td>dhbjadnc</td>
+                                <td>Bujumbura</td>
+                                <td>Descrition</td>
+                                <td>type</td>
+                                <td>Date</td>
+                                <td>Submitted</td>
+                                <td><button>Cancel</button>
+                                    <button class="shado" onclick="view(event, 'edit')">Edit</button>
+                                </td>
                             </tr>
                         </table>
                     </div>
                 </div>
             </div>
             <div class="cad one">
-                <div class="clickable clik bak" onclick="edit()">
+                <div id="klik" class="clickable clik bak" onclick="profile()">
                     <h2>View Profile</h2>
-                    <div class="big">&#9732 </div>
+                    <div class="big">&#9734 </div>
                 </div>
-                <div class="modal mod ">
+                <div id="profile" class="modal mod ">
                     <div class="dv modal-content">
-                        <span class="close">&times;</span>
+                        <span class="cloz">&times;</span>
                         <form>
-                            <input type="text" placeholder="Order Title" required />
-                            <input type="text" placeholder="Destination Address" required />
-                            <textarea placeholder="description" rows="5" cols="35"></textarea>
-
-
-                            <button type="submit"> Order</button>
+                            <h3>Gisele Profile</h3>
+                            <div id="user">
+                                
+                                <label class="shado">Names: Gisele Iradukunda</label></li>
+                                <br><label class="shado"> UserName:girad</label></li>
+                                <br><label class="shado " >Email: girad@gmail.com</label></li>
+                                <br><label>Numbers:</label>
+                                    <ul>
+                                            <li><label>All Orders: 69</label></li>
+                                            <li><label>Deliveries: 58 </label></li>
+                                            <li><label>On Routes: 2</label></li>
+                                            <li><label>Canceled: 2</label></li>
+                                    </ul>
+                                </li>
+                                
+                            </div>
                         </form>
                     </div>
                 </div>
-                
+
             </div>
-        
+
         </div>
         <p>&#x260F; 0788888888 for Safely and Timely Delivering</p>
     </div>
@@ -145,14 +176,13 @@
     <div id="futa">
 
         <div class="cad two">
-           
+
 
             <p>&#169 SendIt Rwanda2018</p>
         </div>
 
     </div>
     </div>
-
 </body>
 
 </html>

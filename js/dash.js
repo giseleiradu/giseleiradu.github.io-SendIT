@@ -17,22 +17,14 @@ function move(evt, num) {
 function edit(){
     var modal = document.querySelector("#order");
     var klik = document.querySelector("#new");
-    // var back = document.querySelector(".backdrop");
     var span = document.getElementsByClassName("close")[0];
     klik.onclick = function(){
         modal.style.display = "block";
-        // back.style.display = "block";
-        // back.style.opacity= "0.5";
-        // back.style.opacity="0.5"
     }
     span.onclick= function(){
         modal.style.display="none";
-        // back.style.display="none";
     }
-    // back.onclick= function(){
-    //     modal.style.display="none";
-    //     back.style.display="none";
-    // }
+
    
 }
 var modal, klik, span;
@@ -48,8 +40,8 @@ function orders(){
     }
    
 }
-function profile(){
-     modal = document.querySelector("#profile");
+function editProfile(){
+    modal = document.querySelector("#profile");
     klik = document.querySelector("#klik");
     span = document.getElementsByClassName("cloz")[0];
     klik.onclick = function(){

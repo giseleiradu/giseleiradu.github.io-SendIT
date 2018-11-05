@@ -12,41 +12,81 @@
 </head>
 
 <body>
-    <header id="dash">
-        <h1>SendIT</h1>
-        <ul></ul>
-    </header>
-    <div id="main">
-        <h2>My Phonebook</h2>
-        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search by Tracking Code..." title="Type the Code"/>
-        <ul>
-                <li>Tracking Number</li>
-                <li>Oder Destination</li>
-                <li>Order Description</li>
-                <li>Parcel Type</li>
-                <li>Initiated Date</li>
-                <li>Parcel Status</li>
-                <li>Action</li>
-        </ul>
-        <ul id="myUL">
-            
-            <li><a href="#">Adele</a>
-                <a href="#">Manuma</a>
-            </li>
-            <li><a href="#">Gisele</a></li>
-            <li><a href="#">John</a></li>
-            <li><a href="#">Rukwaya</a></li>
-            <li><a href="#">Mabano</a></li>
-        </ul>
-            <div class="cad">
+    <header id="dash" class="shado">
 
-                <h2>View Orders</h2>
-                
-            </div>
-
-
+        <div class="logout">
+            <h3>Girad |<a href="../pages/index.html">Logout </a></h3>
 
         </div>
+        <img src="../images/logo.PNG" />
+    </header>
+
+    <div class="container shado">
+        <div class="row">
+            <div class="card ">
+                <div class="avatar">
+                    <img src="../images/userAvatar.png" />
+                </div>
+                <div class="info ">
+                    <div class="title">
+                        <h1>@ Girad</h1>
+                        <h2>Gisele Iradukunda</h2>
+                        <div class="">giseleiradukunda@rocketmail.com</div>
+                    </div>
+                    <div class="desc">
+
+                    </div>
+
+
+                </div>
+                <div class="small">
+
+                    <div class="desc nums shado">Ordered: 29</div>
+                    <div class="desc nums shado">Submitted: 29</div>
+                    <div class="desc nums shado">On Routes: 05</div>
+                </div>
+                <div class="small">
+                    
+                    <div class="desc nums shado">Canceled: 03</div>
+                    <div class="desc nums shado">Delivered: 29</div>
+                    <div class="desc nums shado">All Orders: 37</div>
+                </div>
+                <div class="bottom">
+                    <button id="klik" class="btnconfirm " onclick="editProfile()">
+                        Edit Your Profile
+                    </button>
+                </div>
+            </div>
+            <div id="profile" class="modal mod">
+                <div class="modal-content" >
+                        
+                    <form id="fomU" class="shado">
+                            <span class="cloz">&times;</span>
+                            <h3>Edit Your Profile</h3>
+                           
+                            <label for="uName">Username</label>
+                            <input type="text" id="uName" name="uName" value="Girad" desabled>
+                            <br>
+                            <label>Names</label>
+                            <br>
+                            <input type="type" id="names" name="names" value="Gisele Iradukunda" />
+                            <br>
+                            <label>Names</label>
+                            <br>
+                            <input type="email" id="email" name="email" value="giseleiradukunda@rocketmail.com" />
+                            <button class="btnconfirm">Comfirm</button>
+                            <br>
+                        </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div id="futa">
+        <div class="cad two">
+            <p>&#169 SendIt Rwanda2018</p>
+        </div>
+    </div>
 </body>
 
 </html>

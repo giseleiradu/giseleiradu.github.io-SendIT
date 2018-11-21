@@ -1,0 +1,128 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/dash.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/main.css" />
+    <!-- <script src="../js/dash.js"></script> -->
+    <style>
+        * {
+            box-sizing: border-box
+        }
+
+        body {
+            font-family: "Lato", sans-serif
+        }
+        .entrance{
+            margin-top: 10%;
+            border: 1px solid black;
+        }
+
+        .tabu {
+            float: left;
+            background-color:transparent;
+            width: 15%;
+            height: 85%;
+        }
+
+        .tabu button {
+            box-shadow: 1px 2px 4px  rgba(111, 125, 127, 0.9);
+            display: block;
+            background-color: transparent;
+            color: black;
+            padding: 22px 16px;
+            width: 100%;
+            border: none;
+            outline: none;
+            text-align: left;
+            cursor: pointer;
+            transition: 0.3s;
+            font-size: 17px;
+        }
+
+        .tabu button:hover {
+            background-color:  rgb(72, 115, 115);
+        }
+
+        .tabu button.active {
+            background-color: turquoise;
+        }
+
+        .tabcontent {
+            float: left;
+            padding: 0px 12px;
+            border: 1px solid black;
+            width: 70%;
+            border-left: none;
+            height: 60%;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="dash" class="shado">
+
+        <div class="logout">
+            <h3>Gisele |<a href="../pages/index.html">Logout </a></h3>
+
+        </div>
+        <img id="avatar" src="../images/userAvatar.png" />
+        <img src="../images/logo1.PNG" />
+    </header>
+    <div class="tabu shado">
+        <button class="tablinks" onclick="openCity( event, 'London')">Parcels</button>
+        <button class="tablinks" onclick="openCity( event, 'Paris')">Statistics</button>
+        <button class="tablinks" onclick="openCity( event, 'Tokyo')">Tokyo</button>
+        <button class="tablinks" onclick="openCity( event, 'Kigali')">New Order</button>
+        <button class="tablinks" onclick="openCity( event, 'Kampala')">Profile</button>
+    </div>
+    <div class="txt shado entrance"> 
+            <h2>WELCOME TO THE SENDIT APPLICATION</h2>
+            <p>SendIT is a courier service that helps users deliver parcels to different destinations. SendIT
+                provides courier quotes based on weight categories.</p>
+        </div>
+    <div id="London" class="tabcontent">
+        <h3>LONDON</h3>
+        <p>London is the capital city of England!</p>
+    </div>
+    <div id="Paris" class="tabcontent">
+        <h3>PARIS</h3>
+        <p>London is the capital city of England!</p>
+    </div>
+    <div id="Tokyo" class="tabcontent">
+        <h3>TOKYO</h3>
+        <p>London is the capital city of England!</p>
+    </div>
+    <div id="Kigali" class="tabcontent">
+        <h3>KIGALI</h3>
+        <p>London is the capital city of England!</p>
+    </div>
+    <div id="Kampala" class="tabcontent">
+        <h3>KAMPALA</h3>
+        <p>London is the capital city of England!</p>
+    </div>
+    <script>
+        function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName('tablinks');
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace("active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+        document.getElementById('defaultOpen').click();
+
+    </script>
+</body>
+
+</html>

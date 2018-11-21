@@ -1,5 +1,6 @@
 
 #dash{
+    background-color: #D4D4D4;
     width:100%;
     height: 15%;    
 }
@@ -13,11 +14,13 @@
 
 #dash .logout{
     float:right;
+    /* margin-left: 20px; */
+    /* color: #D4D4D4; */
     /* margin-right: 5px */
 }
 #avatar{
     border-radius: 50%;
-    border: 1px solid red;
+    border: 1px solid rgb(0, 0, 0);
     margin-top: 0.5%;
     width: 6%;
     float: right;
@@ -67,7 +70,7 @@
     float: right;
     font-size: 200%;
     cursor: pointer;
-    color: turquoise;
+    color: #D4D4D4;
 }
 .topright:hover{
     color: aliceblue;
@@ -82,10 +85,10 @@
 }
 #list button{
     /* border: none; */
-    background-color: red;
+    background-color:#ED3E75;
 }
 #list th{
-    background-image: linear-gradient(to bottom, turquoise, white)
+    background-color: #383838;
 }
 .tabcontent{
     height: 100%;
@@ -104,7 +107,7 @@ label{
 
 .profile #user{
     width: 300px;
-    background-image: radial-gradient(turquoise,aliceblue);
+    background-color: #383838;
     font-size: 20px;
 }
 #user label{
@@ -120,34 +123,84 @@ label{
     font-size: 20px;
     
     margin: 0% 10% 0% 40%;
-    background-color: turquoise;
+    background-color: #ED3E75;
     border: 1px black solid;
 }
 
+.main{
+    height: 45%;
+}
 
 #main{
-    transition: margin-left .5s;
+    transition: .5s;
     width: 70%;
     margin: 0% 10% 0% 15%;
+    
 }
 #main .dv{
     width: 70%;
     box-align: center;
 }
 .txt{
+    width: 70%;
+    margin-left: 20%;
     padding-left:3%;
     padding-right:3%;
 }
 
-
+ h3, h2{
+     color:#ED3E75;
+ }
 
 table {
+    margin: 3% 3% 0% 3%;
     border-collapse: collapse;
-
 }
 table tr, th, td{
-    border: solid black 2px;
+    /* border: solid black 2px; */
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
+
+
+td, th{
+    border-radius: 10%;
+    width: 5%;
+    /* height: 40%; */
+    padding: 10px;
+}
+th{
+    background-color: #383838;
+    color: D4D4D4;
+}
+.cansel{
+    background-color: rgb(142, 3, 47);
+    float: left;
+    border:none;
+    outline:none;
+    cursor: pointer;
+    transition:0.3s;
+    font-size:17px;
+    color: #D4D4D4;
+    border-radius: 10%
+}
+
+.buto{
+    background-color: #ED3E75;
+    float: left;
+    border:none;
+    outline:none;
+    cursor: pointer;
+    transition:0.3s;
+    font-size:17px;
+    color: #D4D4D4;
+    border-radius: 10%;
+    margin-left: 10%;
+}
+
+.cansel:hover, .buto:hover{
+    background-color: #383838
+}
+
 #disp{
     width: 100%;
     height: 51%;
@@ -171,7 +224,8 @@ table tr, th, td{
     color: turquoise;
 }
 .bak{
-    background-image:linear-gradient(to bottom,turquoise,white);
+    background-color: transparent;
+    border-bottom: 1px solid black;
 }
 #futa .cad{
     width:100%;
@@ -189,7 +243,7 @@ table tr, th, td{
     
     top:60;
     overflow: auto;
-    background-color:aliceblue;
+    background-color:white;
     -webkit-animation-name: fadeIn;
     -webkit-animation-duration: 0.4s;
     animation-name: fadeIn;
@@ -206,13 +260,13 @@ table tr, th, td{
     }
 }
 
-.backdrop {
+/* .backdrop {
     display: none;
     width: 100vw;
     height: 100vh;
     /* background-color: transparent */
-    /* background: rgba(104, 7, 7, ); */
-}
+    /* background: rgba(104, 7, 7, ); 
+} */
 
 .clickable{
     cursor: pointer; 
@@ -290,14 +344,13 @@ P, h2{
 /* Admin Dash */
 
 
-
 .len{
     width: 90%;
     height: 50px;
 }
 .btnedit {
   border-radius: 4px;
-  background-color:red;
+  background-color:#ED3E75;
   border: none;
   padding: 10px;
   width: 100px;
@@ -340,17 +393,7 @@ P, h2{
     width: 90%;
     height: 50px;
 }
-.btnedit {
-  border-radius: 4px;
-  background-color:red;
-  border: none;
-  padding: 10px;
-  width: 100px;
-  transition: all 0.5s;
-  position: relative;  
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-  float: right;  
-}
+
 
 
 .btnedit span {

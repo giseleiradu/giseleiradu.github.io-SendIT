@@ -1,29 +1,33 @@
 body{
-    background-color: aliceblue;
+    background-color: rgb(255, 255, 255);
     padding:0px;
     margin:0px;
     
+}
+h1{
+    color: #ED3E75;
 }
 #sign{
     width: 35%;
     margin: 0% 75% 0% 35%;
     text-align: center;
+    height: 10%;
 }
 #sign img{
-    height: 10%;
+    height: 100%;
 }
 #dash, #sign{
     
     background-color: black;
-    color: turquoise;
+    color: #D4D4D4;
     
 }
 .shado{
-    box-shadow: 1px 2px 4px  rgba(39, 215, 238, 0.9);
+    box-shadow: 1px 2px 4px 2px rgba(0, 0, 0, 0.9);
     /* padding:5px; */
 }
 
-a{ color: red; }
+a{ color:  rgb(127, 121, 121)werblue; text-decoration-line: none; }
 a:hover{ color:blue; }
 
 .fm{
@@ -31,7 +35,7 @@ a:hover{ color:blue; }
     width: 35%;
     height: 75%;
     padding: 2% 0% 0% 0%; 
-    background-image: linear-gradient(to bottom,turquoise, whitesmoke);
+    /* background-color:; */
 }
 
 #fom{
@@ -39,21 +43,21 @@ a:hover{ color:blue; }
     width: 35%;
     height: 95%;
     padding: 2% 0% 0% 0%; 
-    background-image: linear-gradient(to bottom,turquoise, whitesmoke);
+    background-color: whitesmoke;
     
     
 }
 #fomU{
-    margin: 0% 20% 0% 0%;
-    width: 90%;
-    height: 95%;
+    margin: 0% 0.5% 0% 0%;
+    width: 95%;
+    /* height: 95%; */
     padding: 2% 0% 0% 0%; 
-    background-image: linear-gradient(to bottom,turquoise, whitesmoke);
+    background-color: #383838;
     
     
 }
 
-#fom .centa{
+#fom .centa, .modal-content h3{
    text-align: center;
   
 }
@@ -69,15 +73,17 @@ input{
 
 .btnconfirm, .subm {
       border-radius: 4px;
-      background-color:red;
+      background-color:#ED3E75;
+      color: #D4D4D4;
       border: none;
-      padding: 10px;
+      padding: 0px;
       width: 90%;
       height: 9%;
-      position: relative;  
+      /* position: relative; */
+      font-size: 150%;  
       box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
       margin-left: 13px;
-      margin-top: 4%;
+      margin-top: 1%;
 
 }
 
@@ -89,11 +95,114 @@ input{
 
 }
 
+.cad a{
+    color:black;
+}
 
 #futa{
-    color: red;
+    /* margin-bottom: 0%;  */
+    color: black;
     text-align: center;
 }
 
+.container{
+    width: 70%;
+    margin-left: 15%;
+}
+.card {
+    padding-top: 20px;
+    margin: 10px 0 20px 0;
+    background-color: rgba(214, 224, 226, 0.2);
+    border-top-width: 0;
+    border-bottom-width: 2px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    position: relative;
+    padding-top: 0;
+    text-align: center;
+    background-color: rgba(214, 224, 226, 0.2);
+}
+
+.card .desc {
+    display: block;
+    margin: 8px 14px 0 14px;
+    overflow: hidden;
+    font-size: 30px;
+    color: #737373;
+    text-overflow: ellipsis;
+    
+}
+.card .small{
+    margin-top:10%;
+}
+
+.card .small .nums{
+    padding: 3%;
+    display: inline;
+    background-color: #383838;
+    
+}
+
+.card .avatar {
+    position: relative;
+    top: -50px;
+    margin-bottom: -50px;
+}
+
+.card .avatar img {
+    width: 100px;
+    height: 100px;
+    max-width: 100px;
+    max-height: 100px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    border: 5px solid rgba(255,255,255,0.5);
+}
+
+.card .info {
+    padding: 4px 8px 10px;
+}
+
+.card .info .title {
+    margin-bottom: 4px;
+    font-size: 24px;
+    line-height: 1;
+    color: #262626;
+    vertical-align: middle;
+}
+
+.card .info .desc {
+    overflow: hidden;
+    font-size: 12px;
+    line-height: 20px;
+    color: #D4D4D4;
+    text-overflow: ellipsis;
+}
+
+.bottom {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    display: inline-block;
+    width: 100%;
+    padding-top: 50px;
+    margin-bottom: 17px;
+    line-height: 29px;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+} 
+
+
+.btn{ border-radius: 30%; width:10%; height:7%;background-color: rgb(37, 62, 37) }
 
 

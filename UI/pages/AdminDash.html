@@ -13,21 +13,29 @@
 
 <body>
     <header id="dash" class="shado">
-        <img src="../images/logo.PNG"/> 
-    </header>
-    <h2>Welcome to the Admin Dashboard</h2>
-    <div id="tbs">
-        <div class="tab bak">
+        <!-- <h1>SendIT</h1> -->
+        <div class="logout">
+            <h3>Gisele |  <a href="../pages/index.html">Logout </a></h3>
 
-            <button id="defaultOpen" class="tablinks" onclick="view(event, 'edit')">
+        </div>
+        <img id="avatar" src="../images/userAvatar.png" />
+        <img src="../images/logo1.PNG" />
+    </header>
+    
+    <h2>Welcome to the Admin Dashboard</h2>
+        <div id="tbs">
+            <div class="tab bak">
+                <button id="defaultOpen" class="tablinks" onclick="view(event, 'others')">
+                    Orders
+                    </button>
+                <button class="tablinks" onclick="view(event, 'edit')">
                 Edit
-            </button>
-            <button class="tablinks" onclick="view(event, 'list')">
+                </button>
+                <button class="tablinks" onclick="view(event, 'list')">
                 Users
-            </button>
-            <button class="tablinks" onclick="view(event, 'others')">
-                Others
-            </button>
+                </button>
+                
+            </div>
         </div>
 
         <div id="edit" class="tabcontent shado">
@@ -52,7 +60,7 @@
                     <br>
                     <label>Destination</label>
                     <br>
-                    <input type="text" placeholder="kenya" disabled/>
+                    <input type="text" placeholder="kenya" disabled />
                     <br>
                     <label>Parcel Status</label>
                     <br>
@@ -92,7 +100,8 @@
                 <li><a href="#">John<button class="btnedit tablinks" onclick="view(event, 'edit')">Edit</button></a></li>
                 <li><a href="#">Rukwaya<button class="btnedit tablinks" onclick="view(event, 'edit')">Edit</button></a></li>
                 <li><a href="#">Mabano<button class="btnedit tablinks" onclick="view(event, 'edit')">Edit</button></a></li>
-        </div>
+            </ul>
+     </div>
 
 
         <div id="others" class="tabcontent">
@@ -102,15 +111,61 @@
                 aliquet.</p>
         </div>
     </div>
+
+    <div class="main">
+        <table>
+            <tr>
+                <th>Tracking Number</th>
+                <th>Oder Destination</th>
+                <th>Order Description</th>
+                <th>Parcel Type</th>
+                <th>Initiated Date</th>
+                <th>Parcel Status</th>
+                <th>Action</th>
+            </tr>
+            <tr>
+                <td>dhbjadnc</td>
+                <td>Bujumbura</td>
+                <td>Descrition</td>
+                <td>type</td>
+                <td>Date</td>
+                <td>Submitted</td>
+                <td><button class="shado cansel" >Cancel</button>
+                    <button class="shado buto" onclick="view(event, 'edit')">Edit</button>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Tracking</td>
+                <td>Destination</td>
+                <td>Descrition</td>
+                <td>type</td>
+                <td>Date</td>
+                <td>Ordered</td>
+                <td><button class="shado cansel" >Cancel</button>
+                    <button class="shado buto " onclick="view(event, 'edit')">Edit</button>
+                </td>
+            </tr>
+            <tr>
+                <td>dhbjadnc</td>
+                <td>Bujumbura</td>
+                <td>Descrition</td>
+                <td>type</td>
+                <td>Date</td>
+                <td>Submitted</td>
+                <td><button class="shado cansel" >Cancel</button>
+                    <button class="shado buto" onclick="view(event, 'edit')">Edit</button>
+                </td>
+            </tr>
+        </table>
+    </div>    
+    </div>
     <div id="futa">
 
         <div class="cad two">
-           
-
             <p>&#169 SendIt Rwanda2018</p>
         </div>
 
-    </div>
     </div>
 
 </body>

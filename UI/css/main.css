@@ -1,5 +1,6 @@
 body{
-    background-color: rgb(255, 255, 255);
+    /* background: ; */
+    /* background-color: rgb(255, 255, 255); */
     padding:0px;
     margin:0px;
     
@@ -43,7 +44,7 @@ a:hover{ color:blue; }
     width: 35%;
     height: 95%;
     padding: 2% 0% 0% 0%; 
-    background-color: whitesmoke;
+    /* background-color: whitesmoke; */
     
     
 }
@@ -52,7 +53,7 @@ a:hover{ color:blue; }
     width: 95%;
     /* height: 95%; */
     padding: 2% 0% 0% 0%; 
-    background-color: #383838;
+    /* background-color: #383838; */
     
     
 }
@@ -204,5 +205,3 @@ input{
 
 
 .btn{ border-radius: 30%; width:10%; height:7%;background-color: rgb(37, 62, 37) }
-
-

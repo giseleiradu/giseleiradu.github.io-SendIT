@@ -8,19 +8,19 @@ SendIT is a courier service that helps users deliver parcels to different destin
 
 ## Login
 
-![Alt text](/relative/path/to/img.jpg?raw=true "Optional Title")
+![ScreenShot](https://github.com/giseleiradu/giseleiradu.github.io-SendIT/blob/gh-pages/UI/views/login.PNG)
 
 ## Sign Up
 
-![Alt text](/relative/path/to/img.jpg?raw=true "Optional Title")
+![ScreenShot](https://github.com/giseleiradu/giseleiradu.github.io-SendIT/blob/gh-pages/UI/views/signup.PNG)
 
 ## User Dashboard
 
-![Alt text](/relative/path/to/img.jpg?raw=true "Optional Title")
+![ScreenShot](https://github.com/giseleiradu/giseleiradu.github.io-SendIT/blob/gh-pages/UI/views/userDash2.PNG)
 
 ## Admin Dash
 
-![Alt text](/relative/path/to/img.jpg?raw=true "Optional Title")
+![ScreenShot](https://github.com/giseleiradu/giseleiradu.github.io-SendIT/blob/gh-pages/UI/views/adminDash2.PNG)
 
 
 

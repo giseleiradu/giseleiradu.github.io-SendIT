@@ -61,7 +61,7 @@
 .tabcontent{
     display:none;
     padding:1px 0px 3px 20px;
-    border: 1px solid #ccc;
+    /* border: 1px solid #ccc; */
     border-top: none;
 }
 
@@ -148,7 +148,7 @@ label{
     padding-right:3%;
 }
 
- h3, h2{
+ h3, h2, h5{
      color:#ED3E75;
  }
 
@@ -340,6 +340,10 @@ P, h2{
 #myUL li a :hover:not(.header){
     background-color: #eee;
 }
+#myUL .label{
+    cursor: none;
+    margin: 20%;
+}
 
 /* Admin Dash */
 
@@ -419,4 +423,57 @@ P, h2{
 .btnedit:hover span:after {
   opacity: 1;
   right: 0;
+}
+
+/*new User Dash*/
+
+* {
+    /* box-sizing: border-box */
+}
+
+body {
+    font-family: "Lato", sans-serif
+}
+.entrance{
+    margin-top: 10%;
+    /* border: 1px solid black; */
+}
+
+.tabu {
+    float: left;
+    background-color:transparent;
+    width: 15%;
+    height: 85%;
+}
+
+.tabu button {
+    box-shadow: 1px 2px 4px  rgba(111, 125, 127, 0.9);
+    display: block;
+    background-color: transparent;
+    color: black;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+.tabu button:hover {
+    background-color:  rgb(72, 115, 115);
+}
+
+.tabu button.active {
+    background-color: rgb(252, 141, 191);
+}
+
+.tabcontent {
+    float: left;
+    padding: 0px 12px;
+    /* border: 1px solid black; */
+    width: 70%;
+    /* border-left: none; */
+    height: 60%;
 }

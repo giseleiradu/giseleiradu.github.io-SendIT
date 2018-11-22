@@ -11,7 +11,7 @@
     <script src="../js/dash.js"></script>
 </head>
 
-<body>
+<body background="https://free4kwallpapers.com/no-watermarks/originals/2017/08/13/light--collection-mainly-from-wallhaven-and-unsplash-wallpaper.jpg">
     <header id="dash" class="shado">
         <!-- <h1>SendIT</h1> -->
         <div class="logout">
@@ -25,9 +25,9 @@
     <h2>Welcome to the Admin Dashboard</h2>
         <div id="tbs">
             <div class="tab bak">
-                <button id="defaultOpen" class="tablinks" onclick="view(event, 'others')">
+                <!-- <button id="defaultOpen" class="tablinks" onclick="view(event, 'others')">
                     Orders
-                    </button>
+                    </button> -->
                 <button class="tablinks" onclick="view(event, 'edit')">
                 Edit
                 </button>
@@ -42,45 +42,60 @@
             <span onclick="this.parentElement.style.display='none'" class="topright">&times;</span>
             <div class="">
                 <form id="fom" class="shado">
-                    <label for="trackNumber">Track Number</label>
-                    <input type="text" id="trackNumber" name="trackNumber" value="TH-128" desabled>
-                    <br>
-                    <label>Item Type</label>
-                    <br>
-                    <input type="text" id="itemType" value="Electronics" disabled>
-                    <br>
-                    <label>Current Location</label>
-                    <br>
-                    <select class="cb">
-                        <option value="kigali">kigali</option>
-                        <option value="nairobi">nairobi</option>
-                        <option value="kinshasa">kinshasa</option>
-                        <option value="bujumbura">bujumbura</option>
-                    </select>
-                    <br>
-                    <label>Destination</label>
-                    <br>
-                    <input type="text" placeholder="kenya" disabled />
-                    <br>
-                    <label>Parcel Status</label>
-                    <br>
-                    <select class="cb">
-                        <option value="Innitiated">Innitiated</option>
-                        <option value="Submitted">Submitted</option>
-                        <option value="On Route">On Route</option>
-                        <option value="Delivered">Delivered</option>
-                        <option value="Damaged">Damaged</option>
-                        <option value="Canceled">Canceled</option>
-                    </select>
-                    <br>
-                    <label>Arrival Date</label>
-                    <br>
-                    <input type="date" id="adate" name="adate" value="">
-                    <br>
-                    <!-- <label>Comment</label>
-                    <br>
-                    <textarea class="len"></textarea>
-                    <br> -->
+                    <table>
+                        <tr>
+
+                        </tr>
+                        <tr>
+                            <td><label for="trackNumber">Track Number</label></td>
+                            <td><input type="text" id="trackNumber" name="trackNumber" value="TH-128" desabled></td>
+                        </tr>
+
+                        <tr>
+                                <td><label>Item Type</label></td>
+                                <td><input type="text" id="itemType" value="Electronics" disabled></td>
+                            </tr>
+
+                        <tr>
+                            <td>
+                                    <label>Current Location</label>
+                            </td>
+                            <td>
+                                    <select class="cb">
+                                            <option value="kigali">kigali</option>
+                                            <option value="nairobi">nairobi</option>
+                                            <option value="kinshasa">kinshasa</option>
+                                            <option value="bujumbura">bujumbura</option>
+                                        </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label>Destination</label></td>
+                            <td><input type="text" placeholder="kenya" disabled /></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                    <label>Parcel Status</label>
+                            </td>
+                            <td><select class="cb">
+                                    <option value="Innitiated">Innitiated</option>
+                                    <option value="Submitted">Submitted</option>
+                                    <option value="On Route">On Route</option>
+                                    <option value="Delivered">Delivered</option>
+                                    <option value="Damaged">Damaged</option>
+                                    <option value="Canceled">Canceled</option>
+                                </select></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                    <label>Status Date</label>
+                            </td>
+                            <td>
+                                 <input type="date" id="adate" name="adate" value="12/12/2012">
+                            </td>
+                        </tr>
+                    </table>
+
                     <button class="btnconfirm">Comfirm</button>
                     <br>
                 </form>

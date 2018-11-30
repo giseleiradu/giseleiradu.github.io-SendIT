@@ -1,188 +1,288 @@
-<!DOCTYPE <!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="../css/dash.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="../css/main.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" type="text/css" href="../css/main.css" />
     <script src="../js/dash.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300i,400" rel="stylesheet" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/icon.PNG" />
+    <title>SendIT | Admin</title>
 </head>
 
 <body background="https://free4kwallpapers.com/no-watermarks/originals/2017/08/13/light--collection-mainly-from-wallhaven-and-unsplash-wallpaper.jpg">
-    <header id="dash" class="shado">
-        <!-- <h1>SendIT</h1> -->
-        <div class="logout">
-            <h3>Gisele |  <a href="../pages/index.html">Logout </a></h3>
-
-        </div>
-        <img id="avatar" src="../images/userAvatar.png" />
-        <img src="../images/logo1.PNG" />
+    <header class="header">
+        <a href="index.html" class="brand">SendIT</a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn">
+            <span class="navicon"></span>
+        </label>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="login.html">Logout</a></li>
+            </ul>
+        </nav>
     </header>
-    
-    <h2>Welcome to the Admin Dashboard</h2>
-        <div id="tbs">
-            <div class="tab bak">
-                <!-- <button id="defaultOpen" class="tablinks" onclick="view(event, 'others')">
-                    Orders
-                    </button> -->
-                <button class="tablinks" onclick="view(event, 'edit')">
-                Edit
-                </button>
-                <button class="tablinks" onclick="view(event, 'list')">
-                Users
-                </button>
-                
-            </div>
+
+    <div class="tabu shado">
+
+        <div class="tab bak">
+            <button class="tablinks" onclick="openTab( event, 'parcels')">
+                Parcels
+            </button>
+            <button class="tablinks" onclick="openTab( event, 'order')">
+                New Order
+            </button>
+            <button class="tablinks" onclick="openTab( event, 'profile')">
+                User Profile
+            </button>
         </div>
+    </div>
 
-        <div id="edit" class="tabcontent shado">
-            <span onclick="this.parentElement.style.display='none'" class="topright">&times;</span>
-            <div class="">
-                <form id="fom" class="shado">
-                    <table>
-                        <tr>
 
+
+    <div id="parcels" class="tabcontent">
+        <div class="container">
+            <div class="form-header">
+            </div>
+
+            <div class="dashboard-container">
+                <div class="form-header">
+                    <h1>Parcels</h1>
+                </div>
+
+                <div class="table-container">
+                    <table class="table">
+                        <tr class="row">
+                            <th>Receiver Email</th>
+                            <th>Destination</th>
+                            <th>Origin</th>
+                            <th>Weight</th>
+                            <th>price</th>
+                            <th>Present Location</th>
+                            <th>Parcel Status</th>
+                            <th>Updated Date</th>
+                            <th>Take Action</th>
                         </tr>
-                        <tr>
-                            <td><label for="trackNumber">Track Number</label></td>
-                            <td><input type="text" id="trackNumber" name="trackNumber" value="TH-128" desabled></td>
+                        <tr class="row">
+                            <td>gisele@andela.org</td>
+                            <td>Kigali</td>
+                            <td>Kampala</td>
+                            <td>1</td>
+                            <td>3000 Frw</td>
+                            <th>Kagitumba</th>
+                            <th>In transit</th>
+                            <td>15-6-2018</td>
+                            <td>
+                                <button class="btn-light btn-accept">Edit</button>
+                                <button class="btn-light btn-reject">Cancel</button>
+                            </td>
                         </tr>
 
-                        <tr>
-                                <td><label>Item Type</label></td>
-                                <td><input type="text" id="itemType" value="Electronics" disabled></td>
-                            </tr>
+                        <tr class="row">
+                            <td>gisele@andela.org</td>
+                            <td>Kigali</td>
+                            <td>Kampala</td>
+                            <td>1</td>
+                            <td>3000 Frw</td>
+                            <th>Kagitumba</th>
+                            <th>In transit</th>
+                            <td>15-6-2018</td>
+                            <td>
+                                <button class="btn-light btn-accept">Edit</button>
+                                <button class="btn-light btn-reject">Cancel</button>
+                            </td>
+                        </tr>
 
-                        <tr>
+                        <tr class="row">
+                            <td>gisele@andela.org</td>
+                            <td>Kigali</td>
+                            <td>Kampala</td>
+                            <td>1</td>
+                            <td>3000 Frw</td>
+                            <th>Kagitumba</th>
+                            <th>In transit</th>
+                            <td>15-6-2018</td>
                             <td>
-                                    <label>Current Location</label>
-                            </td>
-                            <td>
-                                    <select class="cb">
-                                            <option value="kigali">kigali</option>
-                                            <option value="nairobi">nairobi</option>
-                                            <option value="kinshasa">kinshasa</option>
-                                            <option value="bujumbura">bujumbura</option>
-                                        </select>
+                                <button class="btn-light btn-accept">Edit</button>
+                                <button class="btn-light btn-reject">Cancel</button>
                             </td>
                         </tr>
-                        <tr>
-                            <td><label>Destination</label></td>
-                            <td><input type="text" placeholder="kenya" disabled /></td>
-                        </tr>
-                        <tr>
+                        <tr class="row">
+                            <td>gisele@andela.org</td>
+                            <td>Kigali</td>
+                            <td>Kampala</td>
+                            <td>1</td>
+                            <td>3000 Frw</td>
+                            <th>Kagitumba</th>
+                            <th>In transit</th>
+                            <td>15-6-2018</td>
                             <td>
-                                    <label>Parcel Status</label>
+                                <button class="btn-light btn-accept">Edit</button>
+                                <button class="btn-light btn-reject">Cancel</button>
                             </td>
-                            <td><select class="cb">
-                                    <option value="Innitiated">Innitiated</option>
-                                    <option value="Submitted">Submitted</option>
-                                    <option value="On Route">On Route</option>
-                                    <option value="Delivered">Delivered</option>
-                                    <option value="Damaged">Damaged</option>
-                                    <option value="Canceled">Canceled</option>
-                                </select></td>
                         </tr>
-                        <tr>
+                        <tr class="row">
+                            <td>gisele@andela.org</td>
+                            <td>Kigali</td>
+                            <td>Kampala</td>
+                            <td>1</td>
+                            <td>3000 Frw</td>
+                            <th>Kagitumba</th>
+                            <th>In transit</th>
+                            <td>15-6-2018</td>
                             <td>
-                                    <label>Status Date</label>
+                                <button class="btn-light btn-accept">Edit</button>
+                                <button class="btn-light btn-reject">Cancel</button>
                             </td>
+                        </tr>
+                        <tr class="row">
+                            <td>gisele@andela.org</td>
+                            <td>Kigali</td>
+                            <td>Kampala</td>
+                            <td>1</td>
+                            <td>3000 Frw</td>
+                            <th>Kagitumba</th>
+                            <th>In transit</th>
+                            <td>15-6-2018</td>
                             <td>
-                                 <input type="date" id="adate" name="adate" value="12/12/2012">
+                                <button class="btn-light btn-accept">Edit</button>
+                                <button class="btn-light btn-reject">Cancel</button>
+                            </td>
+                        </tr>
+                        <tr class="row">
+                            <td>gisele@andela.org</td>
+                            <td>Kigali</td>
+                            <td>Kampala</td>
+                            <td>1</td>
+                            <td>3000 Frw</td>
+                            <th>Kagitumba</th>
+                            <th>In transit</th>
+                            <td>15-6-2018</td>
+                            <td>
+                                <button class="btn-light btn-accept">Edit</button>
+                                <button class="btn-light btn-reject">Cancel</button>
                             </td>
                         </tr>
                     </table>
-
-                    <button class="btnconfirm">Comfirm</button>
-                    <br>
-                </form>
+                </div>
             </div>
         </div>
 
-        <div id="list" class="tabcontent">
-            <span onclick="this.parentElement.style.display='none'" class="topright">&times;</span>
-            <h2>User List</h2>
-            <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search by Tracking Number..." title="Type Tracking Number" />
-
-            <ul id="myUL">
-                <li><a href="#">Adele<button class="btnedit tablinks" onclick="view(event, 'edit')">Edit</button></a>
-                    <a href="#">Manuma<button class="btnedit tablinks" onclick="view(event, 'edit')">Edit</button></a>
-                </li>
-                <li><a href="#">Gisele<button class="btnedit tablinks" onclick="view(event, 'edit')">Edit</button></a></li>
-                <li><a href="#">John<button class="btnedit tablinks" onclick="view(event, 'edit')">Edit</button></a></li>
-                <li><a href="#">Rukwaya<button class="btnedit tablinks" onclick="view(event, 'edit')">Edit</button></a></li>
-                <li><a href="#">Mabano<button class="btnedit tablinks" onclick="view(event, 'edit')">Edit</button></a></li>
-            </ul>
-     </div>
-
-
-        <div id="others" class="tabcontent">
-            <span onclick="this.parentElement.style.display='none'" class="topright">&times;</span>
-            <h3>Other on SendIt</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer semper dapibus tellus et
-                aliquet.</p>
+    </div>
+    <div id="order" class="tabcontent">
+        <div class="form-header">
+            <h1>Create Parcel</h1>
+        </div>
+        <div class="form">
+            <form class="form">
+                <div class="form-group">
+                    <div class="form_label">
+                        <label for="location">Take-off location</label>
+                    </div>
+                    <input type="text" name="location" class="text-input" required>
+                </div>
+                <div class="form-group">
+                    <div class="form_label">
+                        <label for="destination">Destination</label>
+                    </div>
+                    <input type="text" name="pickup" class="text-input" required>
+                </div>
+                <div class="form-group">
+                    <div class="form_label">
+                        <label for="seats">Number of available seats</label>
+                    </div>
+                    <input type="number" name="seats" class="text-input" required>
+                </div>
+                <div class="form-group">
+                    <div class="form_label">
+                        <label for="destination">Date</label>
+                    </div>
+                    <input type="date" name="pickup" class="text-input" required>
+                </div>
+                <div class="form-group">
+                    <div class="form_label">
+                        <label for="time">Time</label>
+                    </div>
+                    <input type="time" name="time" class="text-input" required>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn">LOG IN</button>
+                </div>
+            </form>
         </div>
     </div>
+    <!-- </div> -->
+    <div id="profile" class="tabcontent">
+        <div class="container shado">
+            <div class="row">
+                <section id="user-profile">
+                    <div class="col-lg-6">
+                        <h1>User Profile</h1>
+                        <div class="profile-details new">
+                            <h2>Username:
+                                <span>@Gisele</span>
+                            </h2>
+                        </div>
+                        <div class="profile-details">
+                            <h4>Names:
+                                <span>Gisele Iradukunda</span>
+                            </h4>
+                        </div>
+                        <div class="profile-details">
+                            <h4>Phone Number:
+                                <span>0789770946</span>
+                            </h4>
+                        </div>
+                        <div class="profile-details">
+                            <h4>Email:
+                                <span>gisele@andela.org</span>
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <h1>Orders Summary</h1>
+                        <div class="table-container">
+                            <table class="table">
+                                <tr class="row">
+                                    <th>Status</th>
+                                    <th>Numbers</th>
 
-    <div class="main">
-        <table>
-            <tr>
-                <th>Tracking Number</th>
-                <th>Oder Destination</th>
-                <th>Order Description</th>
-                <th>Parcel Type</th>
-                <th>Initiated Date</th>
-                <th>Parcel Status</th>
-                <th>Action</th>
-            </tr>
-            <tr>
-                <td>dhbjadnc</td>
-                <td>Bujumbura</td>
-                <td>Descrition</td>
-                <td>type</td>
-                <td>Date</td>
-                <td>Submitted</td>
-                <td><button class="shado cansel" >Cancel</button>
-                    <button class="shado buto" onclick="view(event, 'edit')">Edit</button>
-                </td>
-            </tr>
+                                </tr>
+                                <tr class="row">
+                                    <td>All Orders</td>
+                                    <td>10</td>
+                                </tr>
 
-            <tr>
-                <td>Tracking</td>
-                <td>Destination</td>
-                <td>Descrition</td>
-                <td>type</td>
-                <td>Date</td>
-                <td>Ordered</td>
-                <td><button class="shado cansel" >Cancel</button>
-                    <button class="shado buto " onclick="view(event, 'edit')">Edit</button>
-                </td>
-            </tr>
-            <tr>
-                <td>dhbjadnc</td>
-                <td>Bujumbura</td>
-                <td>Descrition</td>
-                <td>type</td>
-                <td>Date</td>
-                <td>Submitted</td>
-                <td><button class="shado cansel" >Cancel</button>
-                    <button class="shado buto" onclick="view(event, 'edit')">Edit</button>
-                </td>
-            </tr>
-        </table>
-    </div>    
-    </div>
-    <div id="futa">
+                                <tr class="row">
+                                    <td>Delivered</td>
+                                    <td>6</td>
+                                </tr>
 
-        <div class="cad two">
-            <p>&#169 SendIt Rwanda2018</p>
+                                <tr class="row">
+                                    <td>Ordered</td>
+                                    <td>2</td>
+                                </tr>
+                                <tr class="row">
+                                    <td>In Transit</td>
+                                    <td>2</td>
+                                </tr>
+                                <tr class="row">
+                                    <td>Canceled</td>
+                                    <td>0</td>
+                                </tr>
+                            </table>
+                </section>
+            </div>
+
         </div>
 
-    </div>
+</body>
 
+</html>
 </body>
 
 </html>

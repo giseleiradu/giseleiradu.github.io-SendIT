@@ -1,48 +1,99 @@
-<!DOCTYPE <!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="../css/main.css" />
-    <script src="main.js"></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" type="text/css" href="../css/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300i,400" rel="stylesheet">
+	<link rel="icon" type="image/png" sizes="32x32" href="../images/icon.PNG">
+	<title>SendIT | Signup</title>
 </head>
 
-<body background="https://free4kwallpapers.com/no-watermarks/originals/2017/08/13/light--collection-mainly-from-wallhaven-and-unsplash-wallpaper.jpg">
-    <header id="sign" class="shado">
-        <img src="../images/logo1.PNG" />
+<body  background="https://free4kwallpapers.com/no-watermarks/originals/2017/08/13/light--collection-mainly-from-wallhaven-and-unsplash-wallpaper.jpg">
+	<header class="header">
+		<a href="index.html" class="brand">SendIT</a>
+		<input class="menu-btn" type="checkbox" id="menu-btn" />
+		<label class="menu-icon" for="menu-btn">
+			<span class="navicon"></span>
+		</label>
+		<nav>
+			<ul class="menu">
+				<li>
+					<a href="index.html">home</a>
+				</li>
+				<li>
+					<a href="login.html">Log In</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
 
-    </header>
-    <div>
-        <form id="fom">
-            <h2 class="centa">Sign- Up</h2>
-            <input type="text" placeholder=" First Name" required />
 
-            <input type="text" placeholder=" Last Name" required />
+	<div class="container">
+		<div class="form_container sign_up_container">
+			<div class="form-header">
+				<h1>Sign Up</h1>
+			</div>
+			<div class="form">
+				<form class="form">
+					<div class="form-group">
+						<div class="form_label">
+							<label for="names">Names:</label>
+						</div>
+						<input type="text" name="names" class="text-input" required>
+					</div>
+					<div class="form-group">
+						<div class="form_label">
+							<label for="uname">Username:</label>
+						</div>
+						<input type="text" name="uname" class="text-input" required>
+					</div>
+					<div class="form-group">
+						<div class="form_label">
+							<label for="password">Password:</label>
+						</div>
+						<input type="password" class="text-input" name="password" required>
+					</div>
+					<div class="form-group">
+						<div class="form_label">
+							<label for="role">User Type:</label>
+						</div>
+						<input type="text" name="role" class="text-input" required>
+					</div>
+					<div class="form-group">
+						<div class="form_label">
+							<label for="phone">Phone:</label>
+						</div>
+						<input type="text" name="phone" class="text-input" required>
+					</div>
+					<div class="form-group">
+						<div class="form_label">
+							<label for="email">Email:</label>
+						</div>
+						<input type="email" class="text-email" name="email" required>
+					</div>
+					<div class="form-group">
+						<div class="form_label">
+							<label for="location">Location:</label>
+						</div>
+						<input type="location" class="text-input" name="location" required>
+					</div>
+					<div class="form-group">
+						<button type="submit" class="btn">SIGN UP</button>
+					</div>
+				</form>
+			</div>
 
-            <input type="text" placeholder=" Username" required />
+		</div>
 
-            <input type="password" placeholder=" Password" required />
+	</div>
 
-            <input type="password" placeholder=" Confirm Password" required />
 
-            <input type="email" placeholder=" Email" required />
-
-            <button type="submit" class="btnconfirm">Submit</button>
-            <h4 class="centa">Have an account?<a href="../pages/index.html">Sign-In</a></h4>
-        </form>
-        <div id="futa">
-
-                <div class="cad two">
-    
-    
-                    <p>&#169 SendIt Rwanda2018</p>
-                </div>
-    
-            </div>
-    </div>
+	<footer>
+		<p>SendIT | Copyright &copy; 2018</p>
+	</footer>
 </body>
 
 </html>
